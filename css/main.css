@@ -1,0 +1,290 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Microsoft YaHei';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  background: #f4f4f4;
+}
+a,
+a:hover,
+a:link,
+a:active,
+a:visited {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style-type: none;
+}
+nav {
+  background: #fff;
+  box-shadow: 0 3px 5px rgba(110, 110, 110, 0.2);
+  width: 100%;
+  position: relative;
+  line-height: 86px;
+  text-align: center;
+}
+nav .nav_box {
+  display: inline-block;
+}
+nav .nav_box .logo {
+  width: 100px;
+  margin-right: 50px;
+}
+nav .nav_box .logo img {
+  width: 100%;
+}
+nav .nav_box .nav_li {
+  max-width: 800px;
+  display: inline-block;
+  line-height: 86px;
+  margin-bottom: 0;
+  margin-right: 100px;
+}
+nav .nav_box .nav_li li {
+  display: inline-block;
+  margin-right: 2rem;
+}
+nav .nav_box .nav_li li.active,
+nav .nav_box .nav_li li:hover {
+  position: relative;
+}
+nav .nav_box .nav_li li.active:after,
+nav .nav_box .nav_li li:hover:after {
+  content: ' ';
+  display: block;
+  width: 5px;
+  height: 5px;
+  background: #bbb;
+  border-radius: 100%;
+  position: absolute;
+  top: 80%;
+  left: 45%;
+}
+nav .nav_box .nav_li li.active a,
+nav .nav_box .nav_li li:hover a {
+  color: #222;
+}
+nav .nav_box .nav_li li a {
+  display: block;
+  color: #999;
+}
+nav .nav_box .search_box {
+  margin-right: 20px;
+  color: #999;
+  display: inline-block;
+}
+nav .nav_box .search_box div {
+  display: inline-block;
+  margin-right: 20px;
+}
+nav .nav_box .search_box div p {
+  margin-bottom: 0;
+}
+nav .nav_box .search_box .nav_tag {
+  position: relative;
+  margin-right: 30px;
+}
+nav .nav_box .search_box .nav_tag a {
+  color: #999;
+}
+nav .nav_box .search_box .nav_tag i {
+  position: absolute;
+  top: -18px;
+  right: -20px;
+}
+nav .nav_box .search_box .nav_tag i img {
+  width: 20px;
+  height: 20px;
+}
+nav .nav_box .search_box .search {
+  line-height: 5rem;
+  position: relative;
+  width: 364px;
+}
+nav .nav_box .search_box .search .btn {
+  position: absolute;
+  right: 0px;
+  background: url(../images/icon_search.png) no-repeat;
+  width: 2.5rem;
+  height: 2.5rem;
+  top: 1.5rem;
+  margin-right: 0.2rem;
+}
+nav .nav_box .search_box .search input {
+  width: 100%;
+  line-height: 2.5rem;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  outline: none;
+  padding-left: 1rem;
+}
+nav .nav_box .search_box .userinfo,
+nav .nav_box .search_box .userinfo_btn {
+  display: none;
+  position: relative;
+}
+nav .nav_box .search_box .userinfo.active,
+nav .nav_box .search_box .userinfo_btn.active {
+  display: inline-block;
+}
+nav .nav_box .search_box .userinfo .user_history,
+nav .nav_box .search_box .userinfo_btn .user_history {
+  position: absolute;
+  width: 120px;
+  padding: 15px 5px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  left: -30px;
+  top: 80px;
+  font-size: 14px;
+  line-height: 2.5rem;
+  z-index: 2;
+  display: none;
+}
+nav .nav_box .search_box .userinfo .user_history:before,
+nav .nav_box .search_box .userinfo_btn .user_history:before {
+  content: '';
+  transform: rotate(45deg);
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  top: -8px;
+  left: 50px;
+}
+nav .nav_box .search_box .userinfo .user_history li,
+nav .nav_box .search_box .userinfo_btn .user_history li {
+  margin-right: 0;
+}
+nav .nav_box .search_box .userinfo .user_history li:first-child,
+nav .nav_box .search_box .userinfo_btn .user_history li:first-child {
+  border-bottom: 1px solid #999;
+}
+nav .nav_box .search_box .userinfo .user_history li a,
+nav .nav_box .search_box .userinfo_btn .user_history li a {
+  display: block;
+  color: #999;
+}
+nav .nav_box .search_box .userinfo img,
+nav .nav_box .search_box .userinfo_btn img {
+  width: 50px;
+  height: 50px;
+}
+nav .nav_box .search_box .userinfo p,
+nav .nav_box .search_box .userinfo_btn p {
+  display: inline-block;
+}
+.position_btn {
+  position: fixed;
+  width: 72px;
+  right: 100px;
+  bottom: 20%;
+  text-align: center;
+}
+.position_btn .go_top {
+  cursor: pointer;
+  height: 72px;
+  border-radius: 100%;
+  background-color: #cacfd2;
+  background-image: url('../images/icon_back_to_top.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 28px;
+}
+.position_btn .go_download {
+  cursor: pointer;
+  font-size: 14px;
+}
+.position_btn .go_download img {
+  width: 100%;
+}
+.login_box {
+  position: fixed;
+  top: 0;
+  height: 1000px;
+  height: 100vh;
+  width: 100%;
+  z-index: 10;
+  display: none;
+  opacity: 0;
+  transtion: all 0.5s;
+}
+.login_box .login_main {
+  padding: 28px;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 580px;
+  margin-top: 10%;
+}
+.login_box .login_main .title {
+  font-size: 28px;
+  color: #212b3d;
+  text-align: center;
+  padding: 20px 0;
+  padding-bottom: 41px;
+  border-bottom: 1px solid #eaeaea;
+}
+.login_box .login_main .sanfang {
+  margin: 40px 92px;
+  margin-bottom: 70px;
+}
+.login_box .login_main .sanfang span {
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 20px;
+  margin: 0;
+  position: relative;
+  background-position: top center;
+  padding-bottom: 0px;
+  cursor: pointer;
+}
+.login_box .login_main .sanfang span div,
+.login_box .login_main .sanfang span a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  z-index: 5;
+  overflow: hidden;
+}
+.login_box .login_main .sanfang span p {
+  position: absolute;
+  bottom: -40px;
+  text-align: center;
+  width: 100%;
+}
+.login_box .login_main .sanfang span.weixin {
+  background-image: url('../images/wechat.png');
+}
+.login_box .login_main .sanfang span.weixin a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.login_box .login_main .sanfang span.qq {
+  background-image: url('../images/QQ.png');
+  margin: 0 70px;
+}
+.login_box .login_main .sanfang span.weibo {
+  background-image: url('../images/sina.png');
+}
+.login_box .mask {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: -1;
+}

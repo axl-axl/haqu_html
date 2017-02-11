@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>haqu</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
+	<script type="text/javascript" src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="101381164" charset="utf-8"></script>
+	<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=1612066925" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<nav class="clearfix">
+		<div class="nav_box">
+	    <div class="logo pull-left">
+	      <img src="./images/logo_big.png">
+	    </div>
+	    <ul class="nav_li">
+	      <li class="active"><a href="">推荐</a></li>
+	      <li><a href="">搞笑</a></li>
+	      <li><a href="">美女</a></li>
+	      <li><a href="">新闻</a></li>
+	      <li><a href="">科技</a></li>
+	      <li><a href="">体育</a></li>
+	      <li><a href="">电影</a></li>
+	      <li><a href="">旅游</a></li>
+	    </ul>
+	    <div class="search_box">
+		    <div class="search">
+		      <input type="" name="search" placeholder="搜索">
+		      <div class="btn"></div>
+		    </div>
+		    <div class="nav_tag">
+		      <a href="">话题</a>
+		      <i><img src="./images/icon_topic_nav.png"></i>
+		    </div>
+		    <div class="userinfo">
+		      <a href="javascript:;" id='head_img'><img src="./images/btn_download.png"></a>
+		      <a href=""><p class="name">YUji ko</p></a>
+		      <ul class="user_history">
+		      	<li><a href="">
+		      		历史记录
+		      	</a></li>
+		      	<li><a href="">
+		      		喜欢的视频
+		      	</a></li>
+		      </ul>
+		    </div>
+		    <div class="userinfo_btn active">
+		    	<a href="javascript:;" id='head_img' class="login_btn" onclick="show_login()">登录</a>
+		    </div>
+	    </div>
+	    </div>
+	</nav>
+	    <div class="login_box">
+	    	<div class="mask" onclick="hide_login()"></div>
+	    	<div class="login_main">
+				<div class="title">请选择登录方式</div>
+				<div class="sanfang">
+					<span class="weixin">
+						<a href="https://open.weixin.qq.com/connect/qrconnect?appid=wxabb2f9480b971f20&redirect_uri=http://www.haqu.com&response_type=code&scope=snsapi_login&state=STATE#wechat_redirect" target="_blank"></a>
+						<p>微信</p>
+					</span>
+					<span class="qq">
+						<div id='qqLogin'></div>
+						<p>QQ</p>
+					</span>
+					<span class="weibo">
+						<div id="wb_btn"></div>
+						<p>微博</p>
+					</span>
+				</div>
+			</div>
+	    </div>
+	<section class="clearfix">
+		<div class="recommend clearfix pull-left">
+			<div class="gray-btn text-center">
+				为您推荐<span class='num'>15</span>个视频，点击查看
+			</div>
+			<div class="moveall clearfix">
+			    <div class="move_box pull-left">
+			      <div class="move_box_mask">
+			        <div class="img_box"><img src="./images/12.jpg"></div>
+			        <div class="moveInfo">
+			          <p>神马的哦啊是奇偶if毛静安寺，放哪的搜房贾师傅阿萨德够你们</p>
+			          <div class="operation clearfix">
+			              <div class="watch_box pull-left">
+			                <i><img src="./images/icon_play.png"></i>221
+			              </div>
+			              <div class="like_box pull-left">
+			                <i><img src="./images/icon_like.png"></i>153
+			              </div>
+			              <div class="comment_box pull-left">
+			                <i><img src="./images/icon_cotent.png"></i>153
+			              </div>
+			          </div>  
+			        </div>
+			      </div>
+			    </div>
+			    <div class="move_box pull-left">
+			      <div class="move_box_mask">
+			        <div class="img_box"><img src="./images/12.jpg"></div>
+			        <div class="moveInfo">
+			          <p>神马的哦啊是奇偶if毛静安寺，放哪的搜房贾师傅阿萨德够你们</p>
+			          <div class="operation clearfix">
+			              <div class="watch_box pull-left">
+			                <i><img src="./images/icon_play.png"></i>221
+			              </div>
+			              <div class="like_box pull-left">
+			                <i><img src="./images/icon_like.png"></i>153
+			              </div>
+			              <div class="comment_box pull-left">
+			                <i><img src="./images/icon_cotent.png"></i>153
+			              </div>
+			          </div>  
+			        </div>
+			      </div>
+			    </div>
+			    <div class="move_box pull-left">
+			      <div class="move_box_mask">
+			        <div class="img_box"><img src="./images/12.jpg"></div>
+			        <div class="moveInfo">
+			          <p>神马的哦啊是奇偶if毛静安寺，放哪的搜房贾师傅阿萨德够你们</p>
+			          <div class="operation clearfix">
+			              <div class="watch_box pull-left">
+			                <i><img src="./images/icon_play.png"></i>221
+			              </div>
+			              <div class="like_box pull-left">
+			                <i><img src="./images/icon_like.png"></i>153
+			              </div>
+			              <div class="comment_box pull-left">
+			                <i><img src="./images/icon_cotent.png"></i>153
+			              </div>
+			          </div>  
+			        </div>
+			      </div>
+			    </div>
+			    <div class="move_box pull-left">
+			      <div class="move_box_mask">
+			        <div class="img_box"><img src="./images/12.jpg"></div>
+			        <div class="moveInfo">
+			          <p>神马的哦啊是奇偶if毛静安寺，放哪的搜房贾师傅阿萨德够你们</p>
+			          <div class="operation clearfix">
+			              <div class="watch_box pull-left">
+			                <i><img src="./images/icon_play.png"></i>221
+			              </div>
+			              <div class="like_box pull-left">
+			                <i><img src="./images/icon_like.png"></i>153
+			              </div>
+			              <div class="comment_box pull-left">
+			                <i><img src="./images/icon_cotent.png"></i>153
+			              </div>
+			          </div>  
+			        </div>
+			      </div>
+			    </div>
+		    </div>
+		    <div class="gray-btn text-center clearfix refresh">
+				<img src="./images/icon_refresh.png">刚看到这里点击刷新
+			</div>
+			<div class="moveall clearfix">
+			    <div class="move_box pull-left">
+			      <div class="move_box_mask">
+			        <div class="img_box"><img src="./images/12.jpg"></div>
+			        <div class="moveInfo">
+			          <p>神马的哦啊是奇偶if毛静安寺，放哪的搜房贾师傅阿萨德够你们</p>
+			          <div class="operation clearfix">
+			              <div class="watch_box pull-left">
+			                <i><img src="./images/icon_play.png"></i>221
+			              </div>
+			              <div class="like_box pull-left">
+			                <i><img src="./images/icon_like.png"></i>153
+			              </div>
+			              <div class="comment_box pull-left">
+			                <i><img src="./images/icon_cotent.png"></i>153
+			              </div>
+			          </div>  
+			        </div>
+			      </div>
+			    </div>
+			    <div class="move_box pull-left">
+			      <div class="move_box_mask">
+			        <div class="img_box"><img src="./images/12.jpg"></div>
+			        <div class="moveInfo">
+			          <p>神马的哦啊是奇偶if毛静安寺，放哪的搜房贾师傅阿萨德够你们</p>
+			          <div class="operation clearfix">
+			              <div class="watch_box pull-left">
+			                <i><img src="./images/icon_play.png"></i>221
+			              </div>
+			              <div class="like_box pull-left">
+			                <i><img src="./images/icon_like.png"></i>153
+			              </div>
+			              <div class="comment_box pull-left">
+			                <i><img src="./images/icon_cotent.png"></i>153
+			              </div>
+			          </div>  
+			        </div>
+			      </div>
+			    </div>
+			    <div class="move_box pull-left">
+			      <div class="move_box_mask">
+			        <div class="img_box"><img src="./images/12.jpg"></div>
+			        <div class="moveInfo">
+			          <p>神马的哦啊是奇偶if毛静安寺，放哪的搜房贾师傅阿萨德够你们</p>
+			          <div class="operation clearfix">
+			              <div class="watch_box pull-left">
+			                <i><img src="./images/icon_play.png"></i>221
+			              </div>
+			              <div class="like_box pull-left">
+			                <i><img src="./images/icon_like.png"></i>153
+			              </div>
+			              <div class="comment_box pull-left">
+			                <i><img src="./images/icon_cotent.png"></i>153
+			              </div>
+			          </div>  
+			        </div>
+			      </div>
+			    </div>
+		    </div>
+	    </div>
+	    <div class="right_list clearfix">
+			<div class="download_box">
+				<img src="./images/logo_big.png">
+				<p>随时随地，海量短视频免费看</p>
+				<div class="download_btn">
+					<a href="">
+						<!-- <img src="./images/">
+						点击下载 -->
+						<img src="./images/btn_download_purple.png">
+					</a>
+				</div>
+			</div>
+			<div class="right_list_box">
+				<div class="title">
+					<img src="./images/icon_select.png">
+					每日精选
+				</div>
+				<ul class='day_chioce'>
+					<div class="date_ul text-center">
+						<a href="" class="btn_prev"></a>2016/12/19<a href="" class="btn_next"></a>
+					</div>
+					<li>
+						<div class="img_active">
+							<img src="./images/12.jpg">
+						</div>
+						<div class="main">
+							催眠大师：吓尿宝宝了！！催眠大师：吓尿宝宝了！！催眠大师：吓尿宝宝了！！
+						</div>
+						<div class="operation_box">
+							<span class="like_box">
+								<i><img src="./images/icon_like.png"></i>2560
+							</span>
+							<span class="comment_box pull-right">
+								<i>
+									<img src="./images/icon_cotent.png">
+								</i>
+								2140
+							</span>
+						</div>
+					</li>
+					<li class="active">
+						<div class="img_active">
+							<img src="./images/12.jpg">
+						</div>
+						<div class="main">
+							催眠大师：吓尿宝宝了！！
+						</div>
+						<div class="operation_box">
+							<span class="like_box">
+								<i><img src="./images/icon_like.png"></i>2560
+							</span>
+							<span class="comment_box pull-right">
+								<i>
+									<img src="./images/icon_cotent.png">
+								</i>
+								2140
+							</span>
+						</div>
+					</li>
+					<li>
+						<div class="img_active">
+							<img src="./images/12.jpg">
+						</div>
+						<div class="main">
+							催眠大师：吓尿宝宝了！！催眠大师：吓尿宝宝了！！催眠大师：吓尿宝宝了！！
+						</div>
+						<div class="operation_box">
+							<span class="like_box">
+								<i><img src="./images/icon_like.png"></i>2560
+							</span>
+							<span class="comment_box pull-right">
+								<i>
+									<img src="./images/icon_cotent.png">
+								</i>
+								2140
+							</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="list_top">
+				<div class="title text-center">
+					<img src="./images/icon_tapic.png">
+					热门话题
+					<a href="" class="tapic_right"></a>
+				</div>
+				<ul>
+					<li>
+						<a href="">
+							<div class="img_box">
+								<img src="./images/12.jpg">
+								<div class="tag_title">
+									模块撒地方级倒是噶所
+								</div>
+							</div>
+							<p>#年纪就法索#</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="img_box">
+								<img src="./images/12.jpg">
+							</div>
+							<p>#年纪就法索#</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="img_box">
+								<img src="./images/12.jpg">
+							</div>
+							<p>#年纪就法索#</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+	    </div>
+	</section>
+	<div class="position_btn clearfix">
+		<div class="go_top" onclick="go_top()">
+		</div>
+		<div class="go_download">
+			<img src="./images/btn_download.png">
+			下载App
+		</div>
+	</div>
+	<script type="text/javascript" src='./js/jquery-3.1.1.min.js'></script>
+	<script type="text/javascript">
+		$('.day_chioce').delegate('li','mouseover',function(){
+			$(this).parent().find('.active').removeClass('active')
+		})
+		$('.day_chioce').delegate('li','mouseover',function(){
+			$(this).addClass('active')
+		})
+		function go_top(){
+			window.scrollTo(0,0)
+		}
+		$('#head_img').click(function(){
+			$('.user_history').toggle();
+		})
+		//显示登录框
+		function show_login(){
+			$('.login_box').css({'display':'block','opacity':1});
+		}
+		function hide_login(){
+			$('.login_box').css({'display':'none','opacity':0});
+		}
+		//验证微信code如果存在则获取该code用户信息
+		function codeweixin(){
+			var code = window.location.search;
+			code = code.match(/=.*&/);
+			if(code){
+				code = code[0].slice(1,-2);
+				acessweixin(code)
+			}
+		}
+		//微信获取acess_token
+		function acessweixin(code){
+			url = "https://api.weixin.qq.com/sns/oauth2/access_token?appid=wxabb2f9480b971f20&secret=0c34361bd70bf359f64be7976a305dad&code="+code+"&grant_type=authorization_code";
+			$.get(url,function(res){
+				console.log(res);
+				userinfoweixin(res.access_token,res.openid);
+			})	
+		}
+		//微信刷新access_token
+		function refreshweixin(refresh_token){
+			url = "https://api.weixin.qq.com/sns/oauth2/refresh_token?appid=wxabb2f9480b971f20&grant_type=refresh_token&refresh_token="+refresh_token;
+			$.get(url,function(res){
+				console.log(res);
+			})
+		}
+		//获取用户信息
+		function userinfoweixin(acess_token,openId){
+			url = "https://api.weixin.qq.com/sns/userinfo?access_token="+acess_token+"&openid="+openId;
+			$.get(url,function(res){
+				console.log(res);
+			})
+		}
+		codeweixin();
+		//QQ三方登录
+		QC.Login({
+		       btnId:"qqLogin",    
+		       scope:"all",
+		       size: "A_XL"
+		   }, function(reqData, opts){//登录成功
+		   		//隐藏登录按钮
+		   		var userinfo_btn = document.querySelector('.userinfo_btn');
+		   		userinfo_btn.setAttribute('class','userinfo_btn');
+		   		var userinfo = document.querySelector('.userinfo');
+		   		userinfo.setAttribute('class','userinfo active')
+		   		//绑定数据
+		   		document.querySelector('#head_img img').setAttribute('src',reqData.figureurl_qq_2)
+		   		document.querySelector('.name').innerHTML=reqData.nickname;
+		   }, function(opts){//注销成功
+		        alert('QQ登录 注销成功');
+		   }
+		);
+		if(QC.Login.check()){//如果已登录
+			QC.Login.getMe(function(openId, accessToken){
+				alert(["当前登录用户的", "openId为："+openId, "accessToken为："+accessToken].join("\n"));
+			});
+		}
+		//微博登录
+		WB2.anyWhere(function(W){
+		    W.widget.connectButton({
+		        id: "wb_btn",	
+		        type:"3,2",
+		        callback : {
+		            login:function(o){	//登录后的回调函数
+		            },	
+		            logout:function(){	//退出后的回调函数
+		            }
+		        }
+		    });
+		});
+	</script>
+</body>
+</html>
